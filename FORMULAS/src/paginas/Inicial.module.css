@@ -13,20 +13,34 @@
   margin-bottom: 30px;
 }
 
+.subtitulo {
+    font-size: 1.2rem;
+    color: #1f3c88; 
+    opacity: 0.8;    
+    margin-top: -25px; 
+    margin-bottom: 30px; /* Dá espaço para as tabelas abaixo */
+    font-weight: 500;
+}
+
 .componentes {
-  display: flex;
-  gap: 25px;
-  flex-wrap: wrap;
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar linha se não couber */
+    justify-content: center;
+    gap: 25px;
+    align-items: stretch; /* Isso faz todos os itens terem a mesma altura */
+    width: 100%;
+    max-width: 1200px;
 }
 
 .tabelas {
-  background-color: white;
-  border-radius: 15px;
-  padding: 20px;
-  width: 300px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  transition: 0.3s;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
 }
 
 .tabelas:hover {
@@ -36,4 +50,11 @@
 .tabelas h2 {
   color: #74acdf;
   margin-bottom: 15px;
+}
+
+.tabelas > div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
 }
