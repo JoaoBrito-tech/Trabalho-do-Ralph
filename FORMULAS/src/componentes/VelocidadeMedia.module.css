@@ -18,7 +18,7 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     font-size: 1rem;
-    outline: none;
+    outline: none; /*  remove o contorno padrão que os elementos recebem */
     transition: border-color 0.3s;
 }
 
@@ -46,9 +46,4 @@
     font-weight: bold;
     color: #1f3c88;
     font-size: 1.1rem;
-    padding: 10px;
-    background-color: #f0f7ff;
-    border-radius: 5px;
-    width: 100%;
-    text-align: center;
 }

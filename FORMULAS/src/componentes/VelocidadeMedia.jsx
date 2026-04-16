@@ -12,7 +12,7 @@ export function VelocidadeMedia() {
 
         if (d > 0 && t > 0) {
             const velocidade = d / t;
-            setResultado(velocidade.toFixed(2));
+            setResultado(velocidade.toFixed(2)); //  converte para uma string com um número específico de casas decimais
         } else {
             alert("Por favor, insira valores maiores que zero.");
         }
@@ -38,7 +38,7 @@ export function VelocidadeMedia() {
                 </button>
             </form>
 
-            {resultado !== null && (
+            {resultado !== null && ( // se resultado não for null, o conteúdo dentro dos parênteses será exibido. span = está exibindo o texto "Total: R$" seguido do valor da variável resultado.
                 <div className={estilos.resultado}>
                     <span>Velocidade Média: {resultado} km/h</span>
                 </div>

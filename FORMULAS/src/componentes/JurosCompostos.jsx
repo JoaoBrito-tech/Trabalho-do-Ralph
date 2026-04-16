@@ -20,7 +20,7 @@ export function JurosCompostos() {
                     type="number" 
                     placeholder="Capital Inicial (R$)" 
                     value={capital}
-                    onChange={(e) => setCapital(e.target.value)} 
+                    onChange={(e) => setCapital(e.target.value)} // Exibe o que o usuário digita
                 />
                 <input 
                     type="number" 
@@ -39,9 +39,9 @@ export function JurosCompostos() {
                 </button>
             </form>
 
-            {resultado !== null && (
+            {resultado !== null && ( // se resultado não for null, o conteúdo dentro dos parênteses será exibido. span = está exibindo o texto "Total: R$" seguido do valor da variável resultado.
                 <div className={estilos.resultado}>
-                    <span>Total: R$ {resultado}</span>
+                    <span>Total: R$ {resultado}</span>  
                 </div>
             )}
         </div>

@@ -18,7 +18,7 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     font-size: 1rem;
-    outline: none;
+    outline: none; /*  remove o contorno padrão que os elementos recebem */
     transition: border-color 0.3s;
 }
 
@@ -45,5 +45,5 @@
     margin-top: 15px;
     font-weight: bold;
     color: #1f3c88;
-    font-size: 1.1rem;
+    font-size: 1.1rem; /* define o tamanho da fonte do texto do resultado  */
 }
