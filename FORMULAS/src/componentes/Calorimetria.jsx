@@ -25,37 +25,40 @@ export function Calorimetria() {
 
     return (
         <div className={estilos.container}>
+            <p className={estilos.descricao}>
+                A calorimetria estuda as trocas de calor entre corpos. A fórmula Q = m · c · ΔT calcula a quantidade de calor necessária para variar a temperatura de uma substância, considerando sua massa, calor específico e a diferença entre a temperatura inicial e final.
+            </p>
             <form className={estilos.formulario} onSubmit={(e) => e.preventDefault()}>
-                <input 
-                    type="number" 
-                    placeholder="Massa (kg)" 
+                <input
+                    type="number"
+                    placeholder="Massa (kg)"
                     value={massa}
-                    onChange={(e) => setMassa(e.target.value)} 
+                    onChange={(e) => setMassa(e.target.value)}
                 />
-                <input 
-                    type="number" 
-                    placeholder="Calor específico (J/kg·K)" 
+                <input
+                    type="number"
+                    placeholder="Calor específico (J/kg·K)"
                     value={calorEspecifico}
-                    onChange={(e) => setCalorEspecifico(e.target.value)} 
+                    onChange={(e) => setCalorEspecifico(e.target.value)}
                 />
-                <input 
-                    type="number" 
-                    placeholder="Temperatura inicial (°C)" 
+                <input
+                    type="number"
+                    placeholder="Temperatura inicial (°C)"
                     value={tempInicial}
-                    onChange={(e) => setTempInicial(e.target.value)} 
+                    onChange={(e) => setTempInicial(e.target.value)}
                 />
-                <input 
-                    type="number" 
-                    placeholder="Temperatura final (°C)" 
+                <input
+                    type="number"
+                    placeholder="Temperatura final (°C)"
                     value={tempFinal}
-                    onChange={(e) => setTempFinal(e.target.value)} 
+                    onChange={(e) => setTempFinal(e.target.value)}
                 />
                 <button type="button" onClick={calcular} className={estilos.botao}>
-                    Calcular Calor
+                    Calcular
                 </button>
             </form>
 
-            {resultado !== null && ( // se resultado não for null, o conteúdo dentro dos parênteses será exibido. span = está exibindo o texto "Total: R$" seguido do valor da variável resultado.
+            {resultado !== null && ( // se resultado não for null, o conteúdo dentro dos parênteses será exibido.
                 <div className={estilos.resultado}>
                     <span>Quantidade de Calor: {resultado} J</span>
                 </div>

@@ -1,60 +1,59 @@
+/* Tira as margens do navegador para remover a borda branca */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .container {
-  min-height: 100vh;
-  background: linear-gradient(to bottom, #74acdf, #ffffff);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px 20px;
+  min-height: 100vh; 
+  background: linear-gradient(to bottom, #74acdf, #ffffff); /* Aplica o degradê  */
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  padding: 40px 20px; 
 }
 
 .titulo {
-  font-size: 2.5rem;
-  color: #1f3c88;
-  margin-bottom: 30px;
+  font-size: 2.5rem; 
+  color: #1f3c88; 
+  margin-bottom: 30px; 
 }
 
 .subtitulo {
-    font-size: 1.2rem;
+    font-size: 1.2rem; 
     color: #1f3c88; 
-    opacity: 0.8;    
+    opacity: 0.8; /* Deixa o meu nome levemente transparente  */
     margin-top: -25px; 
-    margin-bottom: 30px; /* Dá espaço para as tabelas abaixo */
-    font-weight: 500;
+    margin-bottom: 30px; 
+    font-weight: 500; 
 }
 
 .componentes {
-    display: flex;
-    flex-wrap: wrap; /* Permite quebrar linha se não couber */
+    display: flex; 
     justify-content: center;
-    gap: 25px;
-    align-items: stretch; /* Isso faz todos os itens terem a mesma altura */
-    width: 100%;
-    max-width: 1200px;
+    width: 100%; 
+    max-width: 1200px; 
+    margin: -12.5px; /* defini a distância entre as tabelas */
 }
 
 .tabelas {
-    background-color: white;
-    border-radius: 15px;
-    padding: 20px;
+    margin: 12.5px; 
+    background-color: white; 
+    border-radius: 15px; /* Arredonda os cantos das tabelas */
+    padding: 20px; 
     width: 300px; 
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: 0.3s;
-    display: flex;
-    flex-direction: column;
-}
-
-.tabelas:hover {
-  transform: scale(1.03);
+    display: flex; 
+    flex-direction: column; 
 }
 
 .tabelas h2 {
-  color: #74acdf;
-  margin-bottom: 15px;
+  color: #74acdf; 
+  margin-bottom: 15px; 
 }
 
 .tabelas > div {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
+    height: 100%; 
+    display: flex; 
+    flex-direction: column; 
 }

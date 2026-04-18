@@ -5,45 +5,45 @@
     padding: 10px;
 }
 
+.descricao {
+    max-width: 520px;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: justify;
+    color: #1f3c88;
+}
+
 .formulario {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    flex-grow: 1; 
-    justify-content: flex-end; /* Empurra os campos para baixo ou organiza conforme o espaço */
+    margin-bottom: 12px;
+    flex-grow: 1;
+    justify-content: flex-end;
 }
 
 .formulario input {
+    margin-bottom: 12px;
     padding: 12px;
     border: 1px solid #ddd;
+    /* Cria uma borda cinza clara aos campos */
     border-radius: 8px;
     font-size: 1rem;
-    outline: none; /*  remove o contorno padrão que os elementos recebem */
-    transition: border-color 0.3s;
-}
-
-.formulario input:focus {
-    border-color: #1f3c88;
 }
 
 .botao {
+    margin-bottom: 12px;
     padding: 12px;
     background-color: #1f3c88;
     color: white;
     border: none;
     border-radius: 8px;
     font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.botao:hover {
-    background-color: #74acdf;
 }
 
 .resultado {
     margin-top: 15px;
     font-weight: bold;
     color: #1f3c88;
-    font-size: 1.1rem; /* define o tamanho da fonte do texto do resultado  */
+    font-size: 1.1rem;
 }

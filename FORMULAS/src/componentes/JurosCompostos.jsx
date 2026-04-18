@@ -15,33 +15,36 @@ export function JurosCompostos() {
 
     return (
         <div className={estilos.container}>
+            <p className={estilos.descricao}>
+                Os juros compostos mostram como um valor cresce ao longo do tempo com a aplicação de juros sobre juros. A fórmula M = C · (1 + i)^t calcula o montante final a partir do capital inicial, da taxa de juros e do tempo.
+            </p>
             <form className={estilos.formulario} onSubmit={(e) => e.preventDefault()}>
-                <input 
-                    type="number" 
-                    placeholder="Capital Inicial (R$)" 
+                <input
+                    type="number"
+                    placeholder="Capital Inicial (R$)"
                     value={capital}
                     onChange={(e) => setCapital(e.target.value)} // Exibe o que o usuário digita
                 />
-                <input 
-                    type="number" 
-                    placeholder="Taxa de Juros (%)" 
+                <input
+                    type="number"
+                    placeholder="Taxa de Juros (%)"
                     value={taxa}
-                    onChange={(e) => setTaxa(e.target.value)} 
+                    onChange={(e) => setTaxa(e.target.value)}
                 />
-                <input 
-                    type="number" 
-                    placeholder="Tempo (meses/anos)" 
+                <input
+                    type="number"
+                    placeholder="Tempo (meses/anos)"
                     value={tempo}
-                    onChange={(e) => setTempo(e.target.value)} 
+                    onChange={(e) => setTempo(e.target.value)}
                 />
                 <button type="button" onClick={calcular} className={estilos.botao}>
                     Calcular
                 </button>
             </form>
 
-            {resultado !== null && ( // se resultado não for null, o conteúdo dentro dos parênteses será exibido. span = está exibindo o texto "Total: R$" seguido do valor da variável resultado.
+            {resultado !== null && ( // se resultado não for null, o conteúdo dentro dos parênteses será exibido. 
                 <div className={estilos.resultado}>
-                    <span>Total: R$ {resultado}</span>  
+                    <span>Total: R$ {resultado}</span>
                 </div>
             )}
         </div>
